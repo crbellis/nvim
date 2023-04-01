@@ -12,11 +12,7 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use ({ "catppuccin/nvim", as = "catppuccin",
-  	config = function()
-		vim.cmd("colorscheme catppuccin-mocha")
-	end
-  })
+  use ({ "catppuccin/nvim", as = "catppuccin"})
 
   use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
   use("ThePrimeagen/harpoon")
@@ -44,5 +40,13 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+  use("jiangmiao/auto-pairs")
+  use("github/copilot.vim")
+  use("itchyny/lightline.vim")
+  use({'folke/tokyonight.nvim',
+  	config = function()
+		vim.cmd("colorscheme tokyonight-moon")
+	end
+  })
 
 end)

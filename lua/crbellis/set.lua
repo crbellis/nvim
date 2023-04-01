@@ -1,5 +1,6 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.noshowmode = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -29,3 +30,13 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+vim.g["lightline"] = {
+      colorscheme = 'ayu_mirage',
+      active = {
+              left = {{'mode', 'paste'},
+              {'branch', 'filename', 'modified'}},
+              right = {{'lineinfo', 'percent'}}
+      },
+      separator = { left = "",  right = "" },
+      subseparator = { left = "", right = "" }
+}
