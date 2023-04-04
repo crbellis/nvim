@@ -29,6 +29,8 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+vim.g["prettier#autoformat"] = 1
+vim.g["prettier#autoformat_require_pragma"] = 0
 vim.g.mapleader = " "
 vim.g["lightline"] = {
       colorscheme = 'ayu_mirage',

@@ -48,5 +48,6 @@ return require('packer').startup(function(use)
 		vim.cmd("colorscheme tokyonight-moon")
 	end
   })
+  use({"prettier/vim-prettier", run='yarn install --frozen-lockfile --production'})
 
 end)
