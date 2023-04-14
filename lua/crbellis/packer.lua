@@ -40,12 +40,12 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
-  use("jiangmiao/auto-pairs")
   use("github/copilot.vim")
+  use('marko-cerovac/material.nvim')
   use("itchyny/lightline.vim")
   use({'folke/tokyonight.nvim',
   	config = function()
-		vim.cmd("colorscheme tokyonight-moon")
+		vim.cmd("colorscheme material")
 	end
   })
   use({"prettier/vim-prettier", run='yarn install --frozen-lockfile --production'})
