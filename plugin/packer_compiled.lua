@@ -119,10 +119,20 @@ _G.packer_plugins = {
     path = "/Users/chase/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/chase/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/chase/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/chase/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lightline.vim"] = {
     loaded = true,
@@ -180,7 +190,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme material\bcmd\bvim\0" },
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-night\bcmd\bvim\0" },
     loaded = true,
     path = "/Users/chase/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
@@ -199,13 +209,18 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/chase/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/chase/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: tokyonight.nvim
 time([[Config for tokyonight.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\25colorscheme material\bcmd\bvim\0", "config", "tokyonight.nvim")
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme tokyonight-night\bcmd\bvim\0", "config", "tokyonight.nvim")
 time([[Config for tokyonight.nvim]], false)
 
 _G._packer.inside_compile = false

@@ -17,7 +17,10 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run =  ':TSUpdate'})
   use("ThePrimeagen/harpoon")
   use("mbbill/undotree")
+  use("tpope/vim-surround")
+  use("lewis6991/gitsigns.nvim")
   use("tpope/vim-fugitive")
+  use("lukas-reineke/indent-blankline.nvim")
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
@@ -45,7 +48,7 @@ return require('packer').startup(function(use)
   use("itchyny/lightline.vim")
   use({'folke/tokyonight.nvim',
   	config = function()
-		vim.cmd("colorscheme material")
+		vim.cmd("colorscheme tokyonight-night")
 	end
   })
   use({"prettier/vim-prettier", run='yarn install --frozen-lockfile --production'})
