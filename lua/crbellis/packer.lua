@@ -45,12 +45,21 @@ return require('packer').startup(function(use)
   }
   use("github/copilot.vim")
   use('marko-cerovac/material.nvim')
-  use("itchyny/lightline.vim")
+  use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
   use({'folke/tokyonight.nvim',
   	config = function()
 		vim.cmd("colorscheme tokyonight-night")
 	end
   })
   use({"prettier/vim-prettier", run='yarn install --frozen-lockfile --production'})
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+   end
+}
 
 end)
